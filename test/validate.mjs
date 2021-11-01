@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { validate } from '../index.mjs';
+import { validate } from '../lib/index.mjs';
 
 describe('validate versions', () => {
   [

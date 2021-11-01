@@ -23,9 +23,9 @@
     "test": "c8 --reporter=lcov mocha"
   },
   "main": "index.js",
-  "module": "index.mjs",
-  "type": "module",
+  "module": "lib/index.js",
   "types": "index.d.ts",
+  "sideEffects": false,
   "files": [
     "index.js",
     "index.mjs",

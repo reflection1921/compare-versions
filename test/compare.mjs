@@ -1,5 +1,5 @@
 import assert from 'assert';
-import compareVersions, { compare } from '../index.mjs';
+import compareVersions, { compare } from '../lib/index.mjs';
 
 describe('compare versions', () => {
   const cmp = {
