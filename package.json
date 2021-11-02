@@ -22,14 +22,19 @@
   "scripts": {
     "test": "c8 --reporter=lcov mocha"
   },
-  "main": "index.js",
-  "module": "index.mjs",
-  "types": "index.d.ts",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
+  "type": "module",
   "sideEffects": false,
   "files": [
-    "index.js",
-    "index.mjs",
-    "index.d.ts"
+    "./index.js",
+    "./index.mjs",
+    "./index.d.ts"
   ],
   "devDependencies": {
     "c8": "^7.10.0",
