@@ -1,6 +1,0 @@
-root = true
-
-[*]
-indent_style = spaces
-indent_size = 2
-quote_type = single

@@ -1,15 +1,4 @@
-/* global define */
-(function (root, factory) {
-  /* istanbul ignore next */
-  if (typeof define === 'function' && define.amd) {
-    define([], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  } else {
-    root.compareVersions = factory();
-  }
-})(this, function () {
-  var semver =
+var semver =
     /^[v^~<>=]*?(\d+)(?:\.([x*]|\d+)(?:\.([x*]|\d+)(?:\.([x*]|\d+))?(?:-([\da-z\-]+(?:\.[\da-z\-]+)*))?(?:\+[\da-z\-]+(?:\.[\da-z\-]+)*)?)?)?$/i;
 
   function indexOrEnd(str, q) {
@@ -160,6 +149,3 @@
     if (compareStrings(v2, m2) !== 0) return false;
     return compareStrings(v3, m3) >= 0;
   };
-
-  return compareVersions;
-});
